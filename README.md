@@ -1,3 +1,13 @@
+# Inforium vragenlijsten
+
+De volledige broncode staat in [`inforium-vragenlijst-broncode.zip`](inforium-vragenlijst-broncode.zip), inclusief alle bronmappen en tests. Pak dit archief uit in de repositorymap om het project lokaal te bouwen. De losse bestanden in deze repository zijn de projectconfiguratie.
+
+```bash
+unzip -o inforium-vragenlijst-broncode.zip
+npm ci
+npm run build
+```
+
 # Inforium Vragenlijst
 
 Demonstratie van browserlokale vragenlijsten. Gebruik fictieve gegevens.
