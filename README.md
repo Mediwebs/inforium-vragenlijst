@@ -1,13 +1,3 @@
-# Inforium vragenlijsten
-
-De volledige broncode staat in [`inforium-vragenlijst-broncode.zip`](inforium-vragenlijst-broncode.zip), inclusief alle bronmappen en tests. Pak dit archief uit in de repositorymap om het project lokaal te bouwen. De losse bestanden in deze repository zijn de projectconfiguratie.
-
-```bash
-unzip -o inforium-vragenlijst-broncode.zip
-npm ci
-npm run build
-```
-
 # Inforium Vragenlijst
 
 Demonstratie van browserlokale vragenlijsten. Gebruik fictieve gegevens.
@@ -45,7 +35,7 @@ node --test tests/*.test.mjs
 
 Routes staan in `app/`, de modulaire intakedefinitie en validatie in `lib/intake.ts`, de bestaande ESS-definitie in `lib/questionnaire.ts`, en de lokale PDF-renderer in `lib/pdf.ts`.
 
-De live demo draait via ChatGPT Sites (Vinext/Cloudflare Workers). De GitHub-map is een broncodekopie; GitHub Pages-hosting is niet ingesteld. Bij wijzigingen moeten de broncodekopie en Sites-publicatie afzonderlijk worden bijgewerkt. Productiegebruik met echte patiëntgegevens vereist een afzonderlijk ingerichte en gecontroleerde zorgworkflow.
+De live demo draait via [ChatGPT Sites](https://inforium-vragenlijst.maroei.chatgpt.site/) en [GitHub Pages](https://mediwebs.github.io/inforium-vragenlijst/). GitHub bevat een zelfstandige index.html en de volledige broncode in inforium-vragenlijst-broncode.zip. Beide gebruiken dezelfde React-componenten. Bij wijzigingen moeten de broncodekopie en beide publicaties afzonderlijk worden bijgewerkt. Productiegebruik met echte patiëntgegevens vereist een afzonderlijk ingerichte en gecontroleerde zorgworkflow.
 
 
 ## QR-samenvatting en afdruk
@@ -55,6 +45,3 @@ De laatste vraag over verwachtingen en belangrijke informatie is optioneel en he
 
 ## Gelijke versies op Sites en GitHub Pages
 Alle drie vragenlijsten hebben lokale QR-samenvatting en printuitvoer. Epworth gebruikt expliciete selectie en Radix data-state="checked" voor de gekleurde antwoordvakjes. GitHub Pages bundelt dezelfde React-componenten: ?form=short, ?form=epworth, ?form=intake, ?form=examples en ?form=builder. De linkbouwer bewaart de GitHub-projectmap; gegenereerde #q-links blijven werken. Lange medische intake/ESS-antwoorden kunnen boven de QR-grens van 800 bytes uitkomen; selecteer minder onderdelen of kort de samenvatting zelf in. PDF, JSON en print bevatten alle antwoorden.
-
-
-GitHub Pages bundelt alle vragenlijsten uit dezelfde broncode. Publicatiebron: main, /(root). Na npm ci en npm run build: node github-pages/build.mjs.
