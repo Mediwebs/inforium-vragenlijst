@@ -51,3 +51,6 @@ Codes: INF-KORT-001 = korte demo, INF-ESS-001 = Epworth, INF-INTAKE-001 = medisc
 
 ## Intakevragenlijstbouwer
 De bouwer start met de algemene medische intake, inclusief beide talen, tekst- en keuzevragen en condities. Inhoudelijke wijzigingen krijgen automatisch een eigen code. Vraagnummers blijven gelijk bij verwijdering en nieuwe vragen krijgen het volgende vrije nummer. De invullink bewaart de definitie in #intake=; antwoorden blijven lokaal. Op Sites en GitHub Pages opent deze link de intakecomponent met de bewerkte definitie en PDF/JSON/QR/print. Ongeldige definities worden afgewezen.
+
+## Meerdere vragenlijsten bewaren
+De intakebouwer heeft **Mijn vragenlijsten**: opslaan, wijzigingen opslaan, openen, verwijderen, nieuwe lijst starten en kopiëren met een eigen code. Formulierdefinities worden expliciet in browser-localStorage bewaard (maximaal 100); patiëntantwoorden blijven alleen in het invulvenster. Opslag is per browser/apparaat en per website-origin, dus GitHub Pages en Sites delen de opgeslagen lijsten niet. Exporteer/importeer een vragenlijst als JSON voor een reservekopie of overdracht naar een ander apparaat. Import controleert de definitie en bewaart geen meegeleverde antwoorden. Opslagproblemen worden zichtbaar gemeld. Gegenereerde invullinks blijven zelfstandig werken.
