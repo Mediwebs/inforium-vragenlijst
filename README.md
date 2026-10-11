@@ -48,3 +48,6 @@ Alle drie vragenlijsten hebben lokale QR-samenvatting en printuitvoer. Epworth g
 
 ## Genummerde QR-uitvoer
 Codes: INF-KORT-001 = korte demo, INF-ESS-001 = Epworth, INF-INTAKE-001 = medische intake. Vragen hebben vaste nummers; bij conditionele vervolgvragen worden nummers niet opnieuw verdeeld. QR bevat alleen `<vragenlijstcode>` en `<vraagnummer>: <antwoord>`, geen titel of vraagtekst. Bij Epworth zijn 9 en 10 de totaalscore en duiding. Zelfgemaakte vragenlijsten krijgen een code op basis van hun definitie-ID. De volledige tekst blijft in PDF/print beschikbaar. QR-grens blijft 800 UTF-8-bytes.
+
+## Intakevragenlijstbouwer
+De bouwer start met de algemene medische intake, inclusief beide talen, tekst- en keuzevragen en condities. Inhoudelijke wijzigingen krijgen automatisch een eigen code. Vraagnummers blijven gelijk bij verwijdering en nieuwe vragen krijgen het volgende vrije nummer. De invullink bewaart de definitie in #intake=; antwoorden blijven lokaal. Op Sites en GitHub Pages opent deze link de intakecomponent met de bewerkte definitie en PDF/JSON/QR/print. Ongeldige definities worden afgewezen.
