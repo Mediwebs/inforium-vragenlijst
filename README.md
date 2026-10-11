@@ -14,7 +14,7 @@ Demonstratie van browserlokale vragenlijsten. Gebruik fictieve gegevens.
 
 ## Live demo en directe invullinks
 
-De startpagina opent de korte demo: drie optionele vragen over bezoekreden, medicijnen en operaties op twee invulpagina’s. Afronden mag ook zonder antwoorden. De resultaatpagina biedt dezelfde deelopties als de ESS-demo: ingestelde portaalroute (ZODOS-website, zonder automatische overdracht), deelmenu met PDF + JSON, e-mailconcept aan Mediwebs en losse downloads.
+De startpagina opent de korte demo: vier optionele vragen over bezoekreden, medicijnen, operaties en verwachtingen op twee invulpagina’s. Afronden mag ook zonder antwoorden. De resultaatpagina biedt dezelfde deelopties als de ESS-demo: ingestelde portaalroute (ZODOS-website, zonder automatische overdracht), deelmenu met PDF + JSON, e-mailconcept aan Mediwebs en losse downloads.
 
 - [Korte demo (standaard)](https://inforium-vragenlijst.maroei.chatgpt.site/)
 - [Directe korte invullink](https://inforium-vragenlijst.maroei.chatgpt.site/korte-demo)
@@ -50,3 +50,5 @@ De live demo draait via ChatGPT Sites (Vinext/Cloudflare Workers). De GitHub-map
 
 ## QR-samenvatting en afdruk
 De resultaatpagina van de korte demo kan lokaal een QR-code met geselecteerde, bewerkbare tekst maken en als PNG downloaden. Limiet: 800 UTF-8-bytes inclusief kop en vragen, foutcorrectie M, witte marge van vier modules. Lange tekst wordt nooit afgekapt. Iedereen die de QR scant kan de inhoud lezen; er is geen opslag of QR-generatiedienst. Print antwoorden opent het browser-afdrukvenster met alle antwoorden en een eventuele QR-code.
+
+De laatste vraag over verwachtingen en belangrijke informatie is optioneel en heeft maximaal 200 tekens. Afronden is mogelijk wanneer de complete QR-samenvatting binnen 800 UTF-8-bytes past; een teller en melding helpen bij inkorten. Geen antwoorden worden stilzwijgend afgekapt.
