@@ -45,3 +45,6 @@ De laatste vraag over verwachtingen en belangrijke informatie is optioneel en he
 
 ## Gelijke versies op Sites en GitHub Pages
 Alle drie vragenlijsten hebben lokale QR-samenvatting en printuitvoer. Epworth gebruikt expliciete selectie en Radix data-state="checked" voor de gekleurde antwoordvakjes. GitHub Pages bundelt dezelfde React-componenten: ?form=short, ?form=epworth, ?form=intake, ?form=examples en ?form=builder. De linkbouwer bewaart de GitHub-projectmap; gegenereerde #q-links blijven werken. Lange medische intake/ESS-antwoorden kunnen boven de QR-grens van 800 bytes uitkomen; selecteer minder onderdelen of kort de samenvatting zelf in. PDF, JSON en print bevatten alle antwoorden.
+
+## Genummerde QR-uitvoer
+Codes: INF-KORT-001 = korte demo, INF-ESS-001 = Epworth, INF-INTAKE-001 = medische intake. Vragen hebben vaste nummers; bij conditionele vervolgvragen worden nummers niet opnieuw verdeeld. QR bevat alleen `<vragenlijstcode>` en `<vraagnummer>: <antwoord>`, geen titel of vraagtekst. Bij Epworth zijn 9 en 10 de totaalscore en duiding. Zelfgemaakte vragenlijsten krijgen een code op basis van hun definitie-ID. De volledige tekst blijft in PDF/print beschikbaar. QR-grens blijft 800 UTF-8-bytes.
