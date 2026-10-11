@@ -46,3 +46,7 @@ node --test tests/*.test.mjs
 Routes staan in `app/`, de modulaire intakedefinitie en validatie in `lib/intake.ts`, de bestaande ESS-definitie in `lib/questionnaire.ts`, en de lokale PDF-renderer in `lib/pdf.ts`.
 
 De live demo draait via ChatGPT Sites (Vinext/Cloudflare Workers). De GitHub-map is een broncodekopie; GitHub Pages-hosting is niet ingesteld. Bij wijzigingen moeten de broncodekopie en Sites-publicatie afzonderlijk worden bijgewerkt. Productiegebruik met echte patiëntgegevens vereist een afzonderlijk ingerichte en gecontroleerde zorgworkflow.
+
+
+## QR-samenvatting en afdruk
+De resultaatpagina van de korte demo kan lokaal een QR-code met geselecteerde, bewerkbare tekst maken en als PNG downloaden. Limiet: 800 UTF-8-bytes inclusief kop en vragen, foutcorrectie M, witte marge van vier modules. Lange tekst wordt nooit afgekapt. Iedereen die de QR scant kan de inhoud lezen; er is geen opslag of QR-generatiedienst. Print antwoorden opent het browser-afdrukvenster met alle antwoorden en een eventuele QR-code.
